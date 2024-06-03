@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" package="cc.fastcv.jnimanager">
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_app"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JNIManager"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BaseStaticActivity" />
+        <activity android:name=".BaseDynamicActivity" />
+        <activity android:name=".StringDynamicActivity" />
+        <activity android:name=".StringStaticActivity" />
+        <activity android:name=".ObjectFieldActivity" />
+        <activity android:name=".ObjectStaticFieldActivity" />
+        <activity android:name=".ObjectStaticMethodActivity" />
+        <activity android:name=".ObjectMethodActivity" />
+        <activity android:name=".ObjectSuperMethodActivity" />
+        <activity android:name=".RefActivity" />
+        <activity android:name=".ExceptionActivity" />
+        <activity android:name=".MmapActivity" />
+        <activity android:name=".BitmapActivity" />
+        <activity android:name=".InvokeCActivity" />
+    </application>
+
+</manifest>
